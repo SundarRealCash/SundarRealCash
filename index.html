@@ -16,79 +16,98 @@
 
     body {
       font-family: Arial, sans-serif;
-      color: #ffffff;
+      color: white;
       text-align: center;
       min-height: 100vh;
       background:
-        radial-gradient(circle at top left, rgba(18, 168, 90, 0.35), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(8, 120, 61, 0.35), transparent 35%),
-        linear-gradient(135deg, #061b12, #0b3d27 50%, #03110b);
+        radial-gradient(circle at 50% 0%, rgba(255, 35, 35, 0.28), transparent 38%),
+        radial-gradient(circle at 0% 100%, rgba(180, 0, 0, 0.22), transparent 35%),
+        linear-gradient(135deg, #050505, #180303 50%, #000000);
     }
 
     .header {
       padding: 55px 20px 45px;
-      background: linear-gradient(
-        135deg,
-        rgba(11, 122, 62, 0.95),
-        rgba(18, 168, 90, 0.75)
-      );
+      background:
+        radial-gradient(circle at center, rgba(255, 35, 35, 0.35), transparent 55%),
+        linear-gradient(135deg, #170000, #5c0000, #160000);
+      border-bottom: 2px solid #e00000;
       border-bottom-left-radius: 45px;
       border-bottom-right-radius: 45px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 12px 40px rgba(255, 0, 0, 0.20);
+    }
+
+    .logo-box {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 24px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle, #ff2525, #a90000 65%, #430000);
+      border: 3px solid #ff3b3b;
+      border-radius: 35px;
+      box-shadow:
+        0 0 25px rgba(255, 0, 0, 0.55),
+        0 12px 35px rgba(0, 0, 0, 0.65);
     }
 
     .logo {
-      width: 175px;
-      height: 175px;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
-      border-radius: 30px;
-      background: white;
-      padding: 8px;
-      margin-bottom: 22px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+      border-radius: 27px;
+      background: transparent;
     }
 
     h1 {
-      font-size: 34px;
+      font-size: 35px;
       margin-bottom: 12px;
-      text-shadow: 0 3px 10px rgba(0,0,0,0.25);
+      color: #ffffff;
+      text-shadow: 0 0 18px rgba(255, 30, 30, 0.55);
     }
 
     .tagline {
       font-size: 17px;
-      color: #eafff2;
+      color: #ffdada;
     }
 
     .container {
       max-width: 720px;
-      margin: 35px auto;
+      margin: 38px auto;
       padding: 0 18px;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.97);
-      color: #222;
+      background:
+        linear-gradient(145deg, #171717, #0b0b0b);
+      color: white;
+      border: 1px solid #4d1111;
       border-radius: 24px;
       padding: 32px 24px;
       margin-bottom: 25px;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+      box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.55),
+        0 0 18px rgba(150, 0, 0, 0.12);
     }
 
     h2 {
       margin-bottom: 16px;
-      color: #08783d;
+      color: #ff3b3b;
       font-size: 25px;
     }
 
     p {
       line-height: 1.7;
-      color: #555;
+      color: #d0d0d0;
       margin-bottom: 16px;
     }
 
     .download-btn {
       display: inline-block;
-      background: linear-gradient(135deg, #0b8f48, #12b965);
+      background:
+        linear-gradient(135deg, #ff3030, #b40000);
       color: white;
       text-decoration: none;
       font-size: 20px;
@@ -96,18 +115,21 @@
       padding: 17px 42px;
       border-radius: 14px;
       margin-top: 8px;
-      box-shadow: 0 8px 20px rgba(11, 143, 72, 0.35);
+      border: 1px solid #ff5a5a;
+      box-shadow:
+        0 8px 25px rgba(255, 0, 0, 0.35);
       transition: 0.2s;
     }
 
     .download-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 25px rgba(11, 143, 72, 0.45);
+      transform: translateY(-3px);
+      box-shadow:
+        0 12px 30px rgba(255, 0, 0, 0.55);
     }
 
     .note {
       font-size: 14px;
-      color: #777;
+      color: #999;
       margin-top: 17px;
       margin-bottom: 0;
     }
@@ -120,10 +142,10 @@
 
     .features li {
       list-style: none;
-      padding: 13px 0;
+      padding: 14px 0;
       font-size: 16px;
-      color: #333;
-      border-bottom: 1px solid #eeeeee;
+      color: #eeeeee;
+      border-bottom: 1px solid #292929;
     }
 
     .features li:last-child {
@@ -132,7 +154,7 @@
 
     .features li::before {
       content: "✓";
-      color: #0b8f48;
+      color: #ff3030;
       font-weight: bold;
       font-size: 19px;
       margin-right: 12px;
@@ -145,30 +167,32 @@
     }
 
     .step {
-      background: #f4faf7;
-      border-left: 5px solid #0b8f48;
-      padding: 14px;
+      background: #111111;
+      border-left: 5px solid #e00000;
+      padding: 15px;
       margin-bottom: 12px;
       border-radius: 10px;
-      color: #333;
+      color: #eeeeee;
     }
 
     footer {
-      background: rgba(0, 0, 0, 0.45);
-      color: #d8eee2;
+      background: #050505;
+      border-top: 1px solid #3b0b0b;
+      color: #999;
       padding: 28px 15px;
       margin-top: 45px;
       font-size: 14px;
     }
 
     @media (max-width: 500px) {
+
       .header {
         padding: 40px 15px 35px;
       }
 
-      .logo {
-        width: 145px;
-        height: 145px;
+      .logo-box {
+        width: 155px;
+        height: 155px;
       }
 
       h1 {
@@ -191,11 +215,13 @@
 
   <header class="header">
 
-    <img
-      src="WhatsApp Image 2026-09-13 at 3.14.57 PM.jpeg"
-      alt="Sundar Real Cash Logo"
-      class="logo"
-    >
+    <div class="logo-box">
+      <img
+        src="WhatsApp Image 2026-09-13 at 3.14.57 PM.jpeg"
+        alt="Sundar Real Cash Logo"
+        class="logo"
+      >
+    </div>
 
     <h1>Sundar Real Cash</h1>
 
